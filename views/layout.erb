@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Peter*s Blog</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/markdown/2">Peter*s Blog</a></h1>
+      <a href="/markdown/about_me"><div></div></a>
+      <p>A blog covering my exploration of Ruby, HTML/CSS, JavaScript, and web development in general.</p>
+      <nav>
+        <ul>
+          <li><a href="/markdown/2">Front End Exam Prep Notes</a></li>
+          <li><a href="/markdown/deploy_heroku">Deploying a Clean Cloud9 Workspace to Heroku</a></li>
+          <!--<li><a href="/REPLACE">Article 3</a></li>-->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>
