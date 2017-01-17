@@ -21,13 +21,15 @@ header {
   box-sizing: border-box;
 }
 
-header:after {
+header:after,
+header div:after {
   display: block;
   content: '';
   clear: both;
 }
 
 header div {
+  display: block;
   background: url("../data/images/headshot.jpg") no-repeat;
   background-size: cover;
   width: 200px;
