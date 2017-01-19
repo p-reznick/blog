@@ -2,6 +2,7 @@ body {
   max-width: 1024px;
   margin: 0 auto 0 auto;
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-y: scroll;
 }
 
 footer {
