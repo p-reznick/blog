@@ -3,23 +3,25 @@ body {
   margin: 0 auto 0 auto;
   font-family: 'Roboto Condensed', sans-serif;
   overflow-y: scroll;
+  font-size: 15px;
 }
 
 footer {
   clear: both;
 }
 
-h1 {
-  font-size: 60px;
-}
-
 header {
   position: fixed;
+  height: 100%;
   width: 200px;
   float: left;
   background: #ccc;
-  height: 100%;
   box-sizing: border-box;
+  margin-top: -20px;
+}
+
+header h1 a {
+  font-size: 40px;
 }
 
 header:after,
@@ -64,8 +66,7 @@ header h1 a {
 }
 
 header h1 {
-  padding-bottom: 15px;
-  /*padding: 10px;*/
+  padding: 5px 0 15px 0;
 }
 
 main {
@@ -77,6 +78,11 @@ main a:hover {
   text-decoration: underline;
 }
 
+main li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
 main pre {
   padding: 10px 10px 10px 20px;
   color: #000;
@@ -86,23 +92,25 @@ main pre {
 }
 
 main h1 {
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin: 20px 0;
   border-bottom: 2px solid #ccc;
 }
 
 main h2 {
-  font-size: 30px;
-  margin: 10px 0;
+  font-size: 20px;
+  margin: 15px 0;
   color: #404040;
 }
 
 main h3 {
-  font-size: 20px;
-  color: #666;
+  font-size: 18px;
+  color: #404040;
+  margin: 15px 0;
 }
 
 main h4 {
-  font-size: 20px;
+  font-size: 8px;
   font-style: italic;
   color: #8c8c8c;
 }
