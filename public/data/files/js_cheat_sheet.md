@@ -35,6 +35,7 @@ Changing a primitive of one type into another type in JS requires a conversion (
 ### Strings to Numbers
 
 String to number coercions can be performed with the following methods:
+
 ```javascript
 Number('5'); // 5
 
@@ -68,6 +69,7 @@ Boolean('hi there'); // true
 ```
 
 NB: The following five values are 'falsy':
+
  - 0
  - ''
  - undefined
