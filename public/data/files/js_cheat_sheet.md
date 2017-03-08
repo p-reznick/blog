@@ -1,5 +1,5 @@
 #JavaScript Cheat Sheet
-I created these notes for myself in preparation for Launch School's JavaScript exam, and share them here in the hopes that they may prove useful to my fellow students. I based these notes off of Launch School's course materials and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN's JavaScript documentation</a>.
+I created these notes for myself in preparation for Launch School's JavaScript exam, and share them here in the hopes that they may prove useful to my fellow students. I based these notes off of Launch School's course materials and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN's JavaScript documentation</a>.
 
 # Primitive Values
 In JavaScript, there are **six** primitive data types:
