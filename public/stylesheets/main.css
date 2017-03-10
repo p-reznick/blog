@@ -7,7 +7,7 @@ body {
   margin: 0 auto 0 auto;
   font-family: 'Roboto Condensed', sans-serif;
   overflow-y: scroll;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /************************/
@@ -48,7 +48,6 @@ header div:after {
   clear: both;
 }
 
-
 header h1 {
   padding: 5px 0 15px 0;
 }
@@ -70,12 +69,18 @@ header nav {
   margin: 20px 0;
 }
 
+header nav > a:last-of-type {
+  position: fixed;
+  bottom: 50px;
+}
+
 header p {
   line-height: 1.5;
 }
 
 header p,
 header ul a,
+header nav a,
 header h1 a {
   padding: 0 10px;
   box-sizing: border-box;
@@ -92,6 +97,10 @@ header ul li {
 main {
   padding: 0 0 50px 230px;
   box-sizing: border-box;
+}
+
+main a {
+  color: orange;
 }
 
 main a:hover {
