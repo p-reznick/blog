@@ -67,7 +67,7 @@ This seems to be what is happening in Version A, but why?
 In JavaScript, any variable that isn't explicitly *declared* (initialized with the `var` keyword or as a function parameter) is assigned to the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Global_scope">global scope</a>, that is, the set of variables, objects and functions visible from anywhere within the program.  By omitting the `var` keyword when initializing `i` in the for loop:
 
 ```javascript
-(`for ([var] i = 0; i < node.childNodes.length; i++)
+(for ([var] i = 0; i < node.childNodes.length; i++)
 ```
 
 `i` was added to the global scope, rather than the local (function) scope.  However, in order for the function to work properly, `i` must be scoped locally so that the function can iterate over each child node, and must hold a separate value in each function. As written, `i` is reassigned to `0` *every time the function is called for a node with children*, and since each instance of `i` refers to the same global value, this resets the for loops globally - at every level of the recursion.
