@@ -421,6 +421,7 @@ In order to ascertain whether an object is an array use: `Array.isArray(object)`
 
 ### pop
 `Array.prototype.pop()` removes the last element from the array and returns that element, changing the length of the array.
+
 ```javascript
 var arr = [1, 2, 3];
 arr.pop(); // 3
@@ -430,6 +431,7 @@ arr; // [1, 2]
 
 ### push
 `Array.prototype.push()` adds an element to the end of the array and returns the new length of the array.
+
 ```javascript
 var arr = [1, 2, 3];
 arr.push(4); // 4
@@ -439,6 +441,7 @@ arr; // [1, 2, 3, 4]
 
 ### shift
 `Array.prototype.shift()` removes the element at index `0` and *shifts* all subsequent elements down by one, returning the value of the removed element.
+
 ```javascript
 var arr = [1, 2, 3, 4];
 arr.unshift(); // 1
@@ -448,6 +451,7 @@ arr; // [2, 3, 4]
 
 ### unshift
 `Array.prototype.unshift()` adds one element at index `0`, and then *unshifts* the subsequent elements up by one, returning the length of the array.
+
 ```javascript
 var arr = [1, 2, 3];
 arr.shift(4);
