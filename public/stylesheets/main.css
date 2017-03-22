@@ -11,7 +11,7 @@ body {
 }
 
 /************************/
-/*header styles*/
+/*header/nav styles*/
 /************************/
 
 header {
@@ -29,6 +29,10 @@ header {
 header h1:hover,
 header ul li:hover {
   background: orange;
+}
+
+header ul li.break:hover {
+  background: #ccc;
 }
 
 header h1:hover > a,
@@ -78,16 +82,24 @@ header p {
   line-height: 1.5;
 }
 
-header p,
+header p {
+  padding-left: 10px;
+}
 header ul a,
 header nav a,
 header h1 a {
-  padding: 0 10px;
+  padding: 0 10px 0 20px;
   box-sizing: border-box;
 }
 
 header ul li {
   padding-bottom: 10px;
+}
+
+header ul li.break {
+  color: #551a8b;
+  font-weight: 600;
+  margin-left: .5rem;
 }
 
 /************************/
