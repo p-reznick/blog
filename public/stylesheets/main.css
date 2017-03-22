@@ -57,12 +57,12 @@ header h1 a {
 }
 
 header div {
-  /*display: block;*/
-  /*background: url("../data/images/headshot.jpg") no-repeat;*/
-  /*background-size: cover;*/
-  /*width: 200px;*/
-  /*height: 300px;*/
-  /*overflow: hidden;*/
+  display: block;
+  background: url("../data/images/headshot.jpg") no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
 }
 
 header nav {
