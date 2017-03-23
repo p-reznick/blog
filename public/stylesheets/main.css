@@ -76,7 +76,11 @@ header nav > a:last-of-type {
 
 header p {
   line-height: 1.5;
-  padding-left: 10px;
+  padding: 10px;
+}
+
+header p a {
+  display: inline;
 }
 
 header ul a,
@@ -139,12 +143,12 @@ main h1 {
 main h2 {
   font-size: 20px;
   margin: 15px 0;
-  color: #404040;
+  color: #551a8b;
 }
 
 main h3 {
   font-size: 18px;
-  color: #404040;
+  color: #551a8b;
   margin: 15px 0;
 }
 
