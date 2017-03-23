@@ -7,3 +7,5 @@
 The bulk of the text data was taken from Ryan McDermott's <a target="_blank" href="https://github.com/ryanmcdermott/trump-speeches">1mb Archive of Donald Trump Speeches</a>.
 
 The application uses <a target="_blank" href="http://www.sinatrarb.com/">Sinatra</a>, a small, flexible, Ruby web framework ideal for quick development.  The back end is written in Ruby.  There are several different phrase-syllable patterns used to generate the haikus; after the program has randomly selected a pattern, it then scans a collection of clause-like phrases generated from the speeches for text that has a matching syllable count, using the <a href="https://github.com/vshulman/RubyRhymes" target="_blank">RubyRhymes gem</a>.  These phrases are then combined and displayed for the user.
+
+Trumpku's GitHub repository is <a target="_blank" href="https://github.com/p-reznick/trumpku">here.</a>
