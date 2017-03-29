@@ -138,6 +138,12 @@ main h1 {
   font-size: 35px;
   margin: 20px 0;
   border-bottom: 2px solid #ccc;
+  cursor: pointer;
+}
+
+main h1.hovered:after {
+  color: orange;
+  content: ' To Top️';
 }
 
 main h2 {
