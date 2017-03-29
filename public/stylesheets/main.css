@@ -138,6 +138,9 @@ main h1 {
   font-size: 35px;
   margin: 20px 0;
   border-bottom: 2px solid #ccc;
+}
+
+main h1.hovered:hover {
   cursor: pointer;
 }
 
