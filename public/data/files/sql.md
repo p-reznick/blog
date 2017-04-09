@@ -73,7 +73,7 @@ CREATE
 ALTER
 DROP
 ```
-At that the table level, DDL governs schema.
+At the table level, DDL governs schema.
 
 ### DML
 *Data Manipulation Language* is used to create, read, update, and delete data stored in a database.  Common DML statements include:
@@ -91,6 +91,7 @@ At the table level, DML governs the data populating the table.
 *Data Control Language* is used to control access to a database; it is responsible for defining the rights and roles granted to individual users.  Example statements include:
 
 ```sql
+
 GRANT
 REVOKE
 ```
