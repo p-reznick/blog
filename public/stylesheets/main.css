@@ -121,6 +121,14 @@ main a:hover {
   text-decoration: underline;
 }
 
+main code {
+  background-color: #eff0f1;
+  border-radius: 3px;
+  color: #000;
+  font-size: .8rem;
+  padding: 3px 5px;
+}
+
 main li {
   list-style: disc;
   margin-left: 20px;
@@ -132,10 +140,11 @@ main pre {
   background: #eff0f1;
   box-sizing: border-box;
   border-left: 4px solid #ccc;
+  border-radius: 3px;
 }
 
 main h1 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 20px 0;
   border-bottom: 2px solid #ccc;
 }
@@ -150,25 +159,27 @@ main h1.hovered:after {
 }
 
 main h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin: 15px 0;
   color: #551a8b;
 }
 
 main h3 {
-  font-size: 18px;
+  font-size: 20px;
   color: #551a8b;
   margin: 15px 0;
 }
 
 main h4 {
-  font-size: 8px;
-  font-style: italic;
-  color: #8c8c8c;
+  font-size: 20px;
+  margin: 10px 0;
+  color: #551a8b;
 }
 
 main img {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main p {
