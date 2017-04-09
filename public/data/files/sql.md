@@ -14,6 +14,13 @@ An excel spreadsheet is a perfect analogy for a relational database governed by 
 |Worksheet Column|Table Column|
 |Woorksheet Row|Table Row|
 
+## Interacting with PostgreSQL on Cloud9
+Interacting with PostgreSQL on Cloud9 IDE is a little different than in a standard environment, and involves three steps, executed via the CLI:
+
+1. `$ sudo su postgresql start` -- starts the PostgreSQL service
+2. `$ sudo su - postgres` -- starts the PostgreSQL service command line
+3. `$ psql` connects to the PostgreSQL console, through which we can interact directly with the server
+
 ## Joins
 
 A JOIN is a clause in SQL statements that links two tables based on one or more fields.
