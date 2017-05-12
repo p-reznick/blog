@@ -23,7 +23,7 @@ not_found do
 end
 
 get '/' do
-  redirect 'markdown/js_recursion'
+  redirect 'markdown/event_handler'
 end
 
 get '/markdown/:post_id' do
