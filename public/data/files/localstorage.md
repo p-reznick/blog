@@ -1,6 +1,6 @@
-
-
 # Working with local storage
+These notes draw on <a target="_blank" href="https://launchschool.com/">Launch School's</a> course materials and <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">MDN's documentation</a>.
+
 HTML 5 introduced two new properties on `Window`: `localStorage` and `sessionStorage`.  Each of these are JavaScript objects that hold property value pairs.  Ciritically, they allow for semi-permanent or permanent data-storage on the client side.
 
 `sessionStorage` holds property/value pairs for the duration of the session, that is, until the tab or window is closed, while `localStorage` persists across sessions until explicitly removed.
