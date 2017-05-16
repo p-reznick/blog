@@ -1,35 +1,45 @@
 # jQuery
+
+## Introduction
 Originally conceived as browser support code aimed at providing a consistent API for interacting with the DOM, jQuery is a JS library that provides a set  of convenience methods that can be called on DOM objects or collections of DOM objects.  jQuery is implemented in JS.
 
-jQuery can be installed directly on the machine, or via a CDN, accessed with a script element inserted into the head of the document (and before any scripts are loaded that reference jQuery methods):
+We can include jQuery in our application using a **Content Delivery Network (CDN)**.  The code below (which should be pasted into the `head` of our document, allows us to access jQuery without having installed directly on the machine.  It can be found <a target="_blank" href="https://developers.google.com/speed/libraries/">here.</a>
 
-```javascript
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/<VERSION_NUM>/jquery.min.js"></script>
 ```
 
-## DOMContentLoaded and load shorthand
-The `DOMContentLoaded` event can be listened for as follows:
+In order to manipulate some aspect of the DOM with jQuery (or with JS, for that matter), the DOM must have properly loaded.  This can be handled by placing the script tag at the bottom of the HTML `body`, or by using the following formulation:
 
 ```javascript
 $(document).ready(function() {
-  ...
-}
+ // executes after DOM loaded
+});
 ```
-or
+
+or its shorthand:
 
 ```javascript
 $(function() {
-  ...
+  // executes after DOM loaded
 }
 ```
 
-while the `load` event can be listened for like this:
+while this syntax is used for the `load` page event:
 
 ```javascript
 $(window).load(function() {
-  ...
-};
+ // executed after page finishes rendering
+});
 ```
+
+jQuery can perform CSS query selections using this syntax:
+
+```javascript
+$(query_string);
+```
+
+which returns a jQuery collection.  Most CSS is recognized by jQuery.
 
 ## jQuery Events
 Registering event listeners is accomplished in jQuery with the following syntax:
@@ -147,7 +157,7 @@ parent.on(event, selector, function(e) { ... });
 
 this code listens for the given event and then, upon encountering it in the bubbling phase, checks whether `e.target` is `selector`.  If so, the handler is invoked.
 
-## jQuery's `proxy`
+## jQuery's proxy
 jQuery's `$.proxy` method is functionally equivalent to vanilla JS's `bind`.  It takes a function argument and a context argument and returns a new function, bound to the object:
 
 ```javascript
