@@ -1,4 +1,5 @@
 # SQL
+These notes draw upon <a target="_blank" href="https://launchschool.com/">Launch School's</a> course materials and <a target="_blank" href="https://www.postgresql.org/">PostgreSQL's</a> official documentation.
 
 Structured Query Language (SQL) is used to communicate with relational databases. It is a powerful language that uses simple English commands to *Select* (find), *Order* (organize), and *Delete* (manage) a large amount of data.
 

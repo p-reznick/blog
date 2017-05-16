@@ -1,4 +1,5 @@
 # jQuery
+These notes draw upon <a target="_blank" href="https://launchschool.com/">Launch School's</a> course materials and <a target="_blank" href="http://api.jquery.com/">jQuery's</a> official documentation.
 
 ## Introduction
 Originally conceived as browser support code aimed at providing a consistent API for interacting with the DOM, jQuery is a JS library that provides a set  of convenience methods that can be called on DOM objects or collections of DOM objects.  jQuery is implemented in JS.

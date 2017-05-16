@@ -1,4 +1,6 @@
 # HTML Templating with Handlebars
+These notes draw upon <a href="https://launchschool.com/">Launch School's</a> course materials and <a href="http://handlebarsjs.com/">Handlebars'</a> official documentation.
+
 <a href="http://handlebarsjs.com/">Handlebars</a> is a semantic templating library that allows for the efficient creation of new HTML.  Handlebars templates are typically stored in scripts in the original markup.  There are three steps between template and final HTML:
 
 1. Handlebars compiles a template into a function.
