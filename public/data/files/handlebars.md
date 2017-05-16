@@ -6,7 +6,7 @@
 3. The function returns the HTML after replacing the template variables with corresponding context properties.
 
 ## Simple Example
-Given the following `type="text/x-handlebars-template" script:
+Given the following `type="text/x-handlebars-template"` script:
 
 ```javascript
 <script id="template" type="text/x-handlebars-template">
