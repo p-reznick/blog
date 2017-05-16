@@ -2,7 +2,7 @@
 
 Structured Query Language (SQL) is used to communicate with relational databases. It is a powerful language that uses simple English commands to *Select* (find), *Order* (organize), and *Delete* (manage) a large amount of data.
 
-A *Relational Database Management System* (RDBMS) is used to interact with a relational database.  We use PostgreSQL, which grants us access to the Postgres 
+A *Relational Database Management System* (RDBMS) is used to interact with a relational database.  We use PostgreSQL, which grants us access to the Postgres
 client and server.  We use the Postgres Command Prompt `$` to connect to the psql console `some_database=#`, through which we send queries to the database.
 
 An excel spreadsheet is a perfect analogy for a relational database governed by SQL:
@@ -70,7 +70,7 @@ A `RIGHT OUTER JOIN` defines the same relationship between tables as a `LEFT JOI
 
 ## The Sublanguages of SQL
 
-There are three functional sublanguages of SQL: 
+There are three functional sublanguages of SQL:
 
 ### DDL
 *Data Definition Language* is used to create, modify, and delete tables and databases; in other words, it is responsible for describing how data is structured.  Common DDL statements include:
@@ -206,7 +206,7 @@ SELECT expression FROM table GROUP BY value;
 -- all fields and records
 SELECT * FROM age_income;
 =>
- age | income 
+ age | income
 -----+--------
   22 |  28000
   22 |  24000
@@ -217,7 +217,7 @@ SELECT * FROM age_income;
 
 -- simple GROUP BY statement
 SELECT age FROM age_income GROUP BY age;
- age 
+ age
 -----
   25
   22
@@ -246,7 +246,7 @@ SELECT value FROM table ORDER BY expression ASC/DESC;
 
 -- simple table ordered by income in descending order
 SELECT * FROM age_income ORDER BY income DESC;
- age | income 
+ age | income
 -----+--------
   22 |  32000
   25 |  31000
@@ -267,7 +267,7 @@ WHERE expression
 
 -- select statement with where clause
 SELECT * FROM age_income WHERE age > 22;
- age | income 
+ age | income
 -----+--------
   25 |  31000
   24 |  23000
@@ -276,7 +276,7 @@ SELECT * FROM age_income WHERE age > 22;
 
 The `HAVING` clause functions exactly the same as the `WHERE` clause with one key difference: while `WHERE` filters individual rows, `HAVING` filters group rows created by the `GROUP BY` clause.
 ```sql
-SELECT age, avg(income) FROM age_income GROUP BY age HAVING avg(income) > 24000; 
+SELECT age, avg(income) FROM age_income GROUP BY age HAVING avg(income) > 24000;
  age |        avg         
 -----+--------------------
   25 | 31000.000000000000
@@ -392,7 +392,7 @@ DB[:table_name].count # returns total number of records
 DB[:a].join_table(:join_type, a_column: :b_column)
 ```
 
-## Understand what a `Dataset` is and how they are used in an application
+## Understand what a Dataset is and how they are used in an application
 
 A `Dataset` object can be thought of as representing an SQL query, and is the primary means by which Sequel accesses the database.  `Dataset`s can be stored as variables and reused, and most instance methods called on them do not alter the receiver, but rather return a new `Dataset` object modified according to the method call.
 
