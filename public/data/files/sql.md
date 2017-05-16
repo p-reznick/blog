@@ -400,4 +400,4 @@ This means that method calls can be chained, allowing for the modular constructi
 
 Most `Dataset` methods that return modified datasets do not execute the dataset's code on the database.  Those methods that yield or return results (think `Dataset#first`, `Dataset#yield`) should always be the last method call in the chain.
 
-Read more <a href="http://sequel.jeremyevans.net/rdoc/files/doc/dataset_basics_rdoc.html">here</a>.
+Read more <a target="_blank" href="http://sequel.jeremyevans.net/rdoc/files/doc/dataset_basics_rdoc.html">here</a>.
