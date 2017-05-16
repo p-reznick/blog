@@ -5,6 +5,12 @@
 2. The function is executed with a JSON object argument, known as context.
 3. The function returns the HTML after replacing the template variables with corresponding context properties.
 
+Handlebars can be installed directly on your machine or in a specific HTML document using a CDN:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+```
+
 ## Simple Example
 Given the following `type="text/x-handlebars-template"` script:
 
