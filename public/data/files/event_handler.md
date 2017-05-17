@@ -10,7 +10,7 @@ In pure JavaScript, this process can be implemented in several ways.
 The developer doesn't interact directly with `EventListener`, but rather uses wrapper functions to create and modify it.  One such function is the DOM node method <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">addEventListener</a>, which creates an `EventListener`, registers it on the receiver node (called the `eventTarget`), and specifies the handler, passing it an `event` object upon invocation:
 
 ```javascript
-eventTarget.addEventListener(eventType, eventHandler(event));
+eventTarget.addEventListener(eventType, eventHandler);
 ```
 
 Following this model, below we have code that registers a listener that will wait for the `click` event firing on `document`, and then will invoke a callback that will alert us of the fact:
@@ -43,7 +43,7 @@ document.onclick = handler;
 
 Here, however, we don't specify the type of event as an argument, but rather by selecting the GlobalEventHandler property that corresponds to the click event, and setting its value to be the function we want invoked when the event is fired on the `eventTarget`.
 
-An important implication of `GlobalEventHandler`'s object-property style is that only a single handler can be added for a given event type using this approach.  This is in contrast to `addEventHandler`, which allows for an indefinite number of handlers to be registered on a node for any given event.
+An important implication of this approach's object-property style is that only a single handler can be added for a given event type.  This is in contrast to `addEventHandler`, which allows for an indefinite number of handlers to be registered on a node for any given event.
 
 ## Removing EventListeners
 Event listeners must be removed according to the approach by which they were added to the node.
