@@ -70,7 +70,7 @@ foo.__proto__ === bar;
 // => true
 ```
 
-Although `__.proto__` can be used to check the prototype property on objects, it is better to use the methods `Object.getPrototypeOf(obj)` and `object.isPrototypeOf(obj)` for these purposes:
+Although `__proto__` can be used to get (and set) the prototype property on objects, these operations tend to be very slow, and assigning `__proto__` to new values can be dangerous (see the warning at the top of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto">this</a> page).  Therefore, it's better to use the methods `Object.getPrototypeOf(obj)` and `object.isPrototypeOf(obj)` for checking an object's prototype:
 
 ```javascript
 var bar = {};
