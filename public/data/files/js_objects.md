@@ -74,6 +74,7 @@ obj.func(); // Object {func: function}
 
 ## Indirect Invocation
 In indirect invocation (when a function is invoked using `call` or `apply`), `this` refers to the object passed in as the context argument.
+
 ```javascript
 var a = "I'm a global property!"
 
