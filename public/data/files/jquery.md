@@ -175,7 +175,7 @@ jQuery provides two methods that access data attributes on DOM elements, `data` 
 `attr` takes the full attribute name, and can be used to set new `data` attributes as expected.  For this reason, **prefer `attr` when interacting with data attributes in jQuery**.
 
 ## Interacting with Forms using jQuery
-jQuery has <a href="http://api.jquery.com/category/forms/">built-in methods</a> for interacting with form elements.  Most of these are event listeners that bind handlers to specific form events, but the most important two that serialize forms, that is, that convert forms into different data types that are more conducive to being sent via AJAX requests.
+jQuery has <a href="http://api.jquery.com/category/forms/">built-in methods</a> for interacting with form elements.  Most of these are event listeners that bind handlers to specific form events, but the most important are two that serialize forms, that is, that convert forms into different data types that are more conducive to being sent via AJAX requests.
 
 Given the following tag in the document:
 
@@ -192,7 +192,7 @@ $('input').serialize(); // => "user_name=bob11"
 while `serializeArray` returns an array of objects holding the input names and values.  In this case, it returns an array with a single object:
 
 ```javascript
-$('input').serializeArray(); // => { name: "user_name", value: "bob11" }
+$('input').serializeArray(); // => []{ name: "user_name", value: "bob11" }]
 ```
 
-jQuery also has a `val` method that returns the value held by `input` elements.
+jQuery also has a `val` method that returns the value held by `input` elements.  `val` can also be used as a setter method to set the value held by the given input.

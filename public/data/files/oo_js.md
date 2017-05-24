@@ -94,7 +94,7 @@ var Game = {
   title: '',
   system: '',
   description: function() {
-    console.log(this.title + ' is played on the' + this.system);
+    console.log(this.title + ' is played on the ' + this.system);
   }
 };
 
@@ -103,6 +103,7 @@ var kingdomCome = Object.create(Game);
 kingdomCome.title = "Kingdom Come: Deliverance";
 kingdomCome.system = "PC";
 kingdomCome.description();
+// Kingdom Come: Deliverance is played on the PC
 ```
 
 In the example above, the `Game` object stands in for a classical class, while the `kingdomCome` object stands in for an instance of class Game.  The connection between the two comes from `Object.create`, which sets Game as `kingdomCome`'s **prototype**.  By setting the desired properties on `kingdomCome` directly, we simulate state particular to an instance, while `kingdomCome`'s access via prototype to `description` simulates inherited behavior.
