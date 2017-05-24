@@ -192,7 +192,7 @@ $('input').serialize(); // => "user_name=bob11"
 while `serializeArray` returns an array of objects holding the input names and values.  In this case, it returns an array with a single object:
 
 ```javascript
-$('input').serializeArray(); // => []{ name: "user_name", value: "bob11" }]
+$('input').serializeArray(); // => [{ name: "user_name", value: "bob11" }]
 ```
 
 jQuery also has a `val` method that returns the value held by `input` elements.  `val` can also be used as a setter method to set the value held by the given input.
