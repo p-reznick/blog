@@ -148,6 +148,7 @@ Note that a given node cannot exist in the DOM more than once; a node moved or i
 |`replaceChild(node, targetNode)`|Remove `targetNode` from `childNodes` and insert `node` at its former position|
 
 Relative insertion:
+
 |Insertion method|Description|
 |---|---|
 |`element.insertAdjacentElement(position, newElement)`|Inserts `newElement` at `position` relative to `element`|
