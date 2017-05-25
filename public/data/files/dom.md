@@ -198,7 +198,7 @@ A **event listener** is a type of JS <a href="https://www.w3.org/TR/DOM-Level-2-
 The developer doesn't interact directly with `EventListener`, but rather uses the DOM node method **`addEventListener`**, which creates the listener, registers it on the receiver node, called `eventTarget`, and specifies the handler, passing it an `event` object upon invocation:
 
 ```javascript
-eventTarget.addEventListener(eventType, eventHandler(event));
+eventTarget.addEventListener(eventType, eventHandler);
 ```
 
 Below is code that registers a listener that will wait for the `click` event firing on `document`, and then will invoke a callback that will alert us of the fact:
