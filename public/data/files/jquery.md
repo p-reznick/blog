@@ -52,7 +52,7 @@ $(selectorString).on(eventName, callback);
 where:
 
  - `on` is used to assign the event listener, taking an event and callback argument
- - `selectorString` is a string representation of a CSS-style selector the targets the element or elements we want to serve as event target for the listener
+ - `selectorString` is a string representation of a CSS-style selector that targets the element or elements we want to serve as event target for the listener
  - `eventName` is the kind of event we want to listen for
  - `callback` is the function that will be executed, and is supplied an `event` object
 
@@ -96,7 +96,7 @@ $('article').closest('h1');
 |Method|Return Value|
 |---|---|
 |`next(optSelector)`|A jQuery collection holding the next sibling, optionally filtered by `optSelector`|
-|`nextAll(optSelector)`|A jQuery collection holding all next siblins that match `optSelector`|
+|`nextAll(optSelector)`|A jQuery collection holding all next siblings that match `optSelector`|
 |`prev(optSelector)`|A jQuery collection holding the previous sibling, optionally filtered by `optSelector`|
 |`prevAll(optSelector)`|A jQuery collection holding all previous siblings, optionally filtered by `optSelector`|
 
