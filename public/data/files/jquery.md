@@ -4,7 +4,7 @@ These notes draw upon <a target="_blank" href="https://launchschool.com/">Launch
 ## Introduction
 Originally conceived as browser support code aimed at providing a consistent API for interacting with the DOM, jQuery is a JS library that provides a set  of convenience methods that can be called on DOM objects or collections of DOM objects.  jQuery is implemented in JS.
 
-We can include jQuery in our application using a **Content Delivery Network (CDN)**.  The code below (which should be pasted into the `head` of our document, allows us to access jQuery without having installed directly on the machine.  It can be found <a target="_blank" href="https://developers.google.com/speed/libraries/">here.</a>
+We can include jQuery in our application using a **Content Delivery Network (CDN)**.  The code below (which should be pasted into the `head` of our document), allows us to access jQuery without having installed directly on the machine.  It can be found <a target="_blank" href="https://developers.google.com/speed/libraries/">here.</a>
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/<VERSION_NUM>/jquery.min.js"></script>
