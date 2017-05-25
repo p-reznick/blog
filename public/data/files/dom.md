@@ -59,6 +59,7 @@ Child node properties:
 |`parentNode`|Immediate parent of receiver node|
 
 Element-type parent node properties:
+
 |Parent Element Property|Value|
 |---|---|
 |`firstElementChild`|`children[0]` or `null`|
