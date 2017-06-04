@@ -117,6 +117,20 @@ main a {
   color: orange;
 }
 
+main a.copy_link {
+  float: right;
+  margin: 0 150px 0 0;
+  background-color: orange;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main a.copy_link:hover {
+  background-color: #551a8b;
+  text-decoration: none;
+}
+
 main a:hover {
   text-decoration: underline;
 }
@@ -132,6 +146,10 @@ main code {
 main li {
   list-style: disc;
   margin-left: 20px;
+}
+
+main p.cdn {
+  display: inline-block;
 }
 
 main pre {

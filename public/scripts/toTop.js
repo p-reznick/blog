@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  scrollToTop();
+  addListeners();
 });
 
-function scrollToTop() {
+function addListeners() {
   $('h1').on('click', function(e) {
     if (!atTop()) {
       $(document).scrollTop(0);
@@ -21,6 +21,5 @@ function scrollToTop() {
 }
 
 function atTop() {
-  console.log('at top');
   return $(document).scrollTop() == 0;
 }
