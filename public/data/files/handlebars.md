@@ -125,4 +125,4 @@ After loading the output script into the document, the compiled template functio
 
 `var template = Handlebars.templates.myTemplate`
 
-Read more about this process <a href="http://handlebarsjs.com/precompilation.html">here.</a.
+Read more about this process <a href="http://handlebarsjs.com/precompilation.html">here.</a>
