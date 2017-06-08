@@ -2,19 +2,20 @@
 
 CDNs (<a href="https://en.wikipedia.org/wiki/Content_delivery_network">Content Delivery Networks</a>) can be used to load JavaScript packages over the internet with a high degree of reliability.  Loading packages in this manner is often considered a best practice, because it cannot be assumed that a user will have any given library downloaded on his or her machine.
 
-The link to the CDN's package is set as the value for a `script` element's `src` attribute.  The script element itself is placed at the bottom of the HTML document's `head` element, with the `scripts` ordered by dependance.  The resulting set of script tags usually looks something like this:
+The link to the CDN's package is set as the value for a `script` element's `src` attribute.  The script itself is placed towards the bottom of the HTML document's `head` element, with the scripts ordered by dependance, and the local script (that will directly or indirectly depend upon them all) at the bottom.  The resulting set of script tags usually looks something like this:
 
 ```html
 <head>
   <!-- title, meta information etc... -->
+  <!-- CDNs -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- path to local scripts etc... -->
+  <!-- local script -->
 </head>
 ```
 
-Packages are often made available in *uncompressed* and *minified* forms, for development and production, respectively.  The difference between these two is that the standard form retains whitespace and non-essential characters, which make it easier for humans to understand, while the minified version removes these, making the file smaller and quicker to download.  Since they are quicker to download and less likely to be subject to scrutiny by a person, it's best to use minified CDN packages for production applications.
+Packages are often made available in *uncompressed* and *minified* forms, for development and production, respectively.  The difference between these two is that the standard form retains whitespace and non-essential characters, which make it easier for humans to understand, while the minified version removes these, making the file smaller and quicker to download.  It's best to use minified CDN packages for production applications, since these packages are unlikely to be scrutinized by a person and will provide some performance gain during page load.
 
-Listed below are CDN URLs to some of the most common JS packages, with the minified version is second.
+Below are CDN URLs for some of the most common JS packages, with the minified version listed second.
 
 ## jQuery
 <p class="cdn" id="jquery">https://code.jquery.com/jquery-3.2.1.js</p><a href="#" id="copy_jquery" class="copy_link">Copy</a><br>
