@@ -1,4 +1,4 @@
-#JavaScript Cheat Sheet
+# JavaScript Cheat Sheet
 I created these notes for myself in preparation for Launch School's JavaScript exam, and share them here in the hopes that they may prove useful to my fellow students. I based these notes off of Launch School's course materials and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN's JavaScript documentation</a>.
 
 # Primitive Values
@@ -128,7 +128,7 @@ The match can be made global by supplying a pattern with the `g` flag, while the
 NB: The argument itself will be excluded from the returned array.
 
 ### substr
-`String.prototype.substr(start[, width])` returns a substring starting at `start` and, by default, extending to the end of the string.  If an optional `width` value is provided, then the method returns a substring starting at `start` and extending to `start + width`, non-inclusive, or the end of the string, if less than `start + width`. 
+`String.prototype.substr(start[, width])` returns a substring starting at `start` and, by default, extending to the end of the string.  If an optional `width` value is provided, then the method returns a substring starting at `start` and extending to `start + width`, non-inclusive, or the end of the string, if less than `start + width`.
 
 ### substring
 `String.prototype.substring(start[, end])` returns a substring starting at index `start` and ending at index `end` or the end of the string, if `end` isn't provided.  If `start` is less than `end`, `substring` will swap the values.
@@ -271,7 +271,7 @@ var a = 'Hello, world!';
 ### Hoisting Function Declarations
 Hoisting also applies to function declarations and statements.  Note, however, that function declarations are hoisted **above** variable declarations.
 
-Thus, the code below outputs `Goodbye, world!`, because the function declaration, though located below the variable declaration in the source code, is hoisted it above it, meaning that the value assigned to the *variable* `a` is what is output by the logging operation. 
+Thus, the code below outputs `Goodbye, world!`, because the function declaration, though located below the variable declaration in the source code, is hoisted it above it, meaning that the value assigned to the *variable* `a` is what is output by the logging operation.
 
 ```javascript
 var a = 'Goodbye, world!';
@@ -340,8 +340,8 @@ function foo() {
 }
 
 //function expression
-function bar() {
-  
+var bar = function() {
+
 }
 ```
 
