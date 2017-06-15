@@ -345,14 +345,6 @@ var bar = function() {
 }
 ```
 
-NB: a function expression **can** include a function declaration:
-```javascript
-var a = function bar() {
-  return 1;
-}
-```
-However: in the case of the above example, the function name `bar` isn't visible outside of it's own scope.  If we want to reference or call it, we need to use `a`.
-
 # Object Properties and Mutation
 JS uses objects to organize code and data.  Objects can be created with the literal syntax:
 
