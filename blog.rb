@@ -10,7 +10,7 @@ def render_markdown(content)
 end
 
 def latest_post
-  
+
 end
 
 configure do
@@ -23,7 +23,7 @@ not_found do
 end
 
 get '/' do
-  redirect 'markdown/event_handler'
+  redirect 'markdown/json_prototype'
 end
 
 get '/markdown/:post_id' do
