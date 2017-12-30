@@ -23,7 +23,7 @@ not_found do
 end
 
 get '/' do
-  redirect 'markdown/json_prototype'
+  redirect 'markdown/about_me'
 end
 
 get '/markdown/:post_id' do
